@@ -99,3 +99,21 @@ Example:
 
 ```csharp
 _usersService.CreateUser(request);
+
+# Existing Project Evolution Rules
+
+Aura agents must assume repositories may already contain working implementations.
+
+Before creating new code:
+
+1. Inspect existing architecture.
+2. Identify implemented functionality.
+3. Identify gaps.
+4. Avoid duplicate implementations.
+5. Preserve working patterns.
+6. Prefer incremental improvement over rewriting.
+
+Never rebuild existing systems without explaining:
+- Why replacement is necessary.
+- What problem it solves.
+- What risks exist.
